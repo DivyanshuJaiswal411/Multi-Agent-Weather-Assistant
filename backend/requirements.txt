@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+google-adk
+google-genai
+pydantic
+requests
+tenacity

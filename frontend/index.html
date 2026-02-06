@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Weather Agent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="logo-circle">
+                <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="header-text">
+                <h1>Weather Assistant</h1>
+                <p>Multi-Agent System • Powered by Gemini</p>
+            </div>
+        </header>
+        
+        <div class="chat-window" id="chat-box">
+            <!-- Initial Greeting -->
+            <div class="message agent">
+                <div class="avatar-icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="bubble">
+                    <strong>Hello! I'm your Weather Assistant.</strong> 🌤️<br>
+                    I can check current conditions or provide forecasts.<br>
+                    Try: <em>"Weather in Tokyo"</em> or <em>"Forecast for London"</em>.
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-field-wrapper">
+                <input type="text" id="user-input" placeholder="Ask about weather..." autocomplete="off">
+            </div>
+            <button class="send-btn" id="send-btn" onclick="sendMessage()">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

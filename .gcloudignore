@@ -1,0 +1,15 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+
+.ipynb_checkpoints/
+*.ipynb
+
+frontend/
+README.md
+
+.env
+.venv
+venv/
+node_modules/
