@@ -7,7 +7,7 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-OPENWEATHER_API_KEY = "50b691c552ff07b2e2e304ac7754e777"
+OPENWEATHER_API_KEY = "YOUR_KEY"
 
 if not OPENWEATHER_API_KEY:
     raise RuntimeError("OPENWEATHER_API_KEY is not set")
