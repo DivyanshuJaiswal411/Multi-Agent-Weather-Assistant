@@ -18,10 +18,10 @@ The system uses a hierarchical agent structure managed by the Google ADK `Runner
 graph TD
     User[User] --> Frontend[Firebase Frontend]
     Frontend -->|REST API| Backend[Cloud Run Backend]
-    Backend --> RootAgent[Root Agent (Supervisor)]
+    Backend --> RootAgent["Root Agent (Supervisor)"]
     
-    RootAgent -->|Delegates 'Current Weather'| WeatherAgent[Weather Agent]
-    RootAgent -->|Delegates 'Forecast'| ForecastAgent[Forecast Agent]
+    RootAgent -->|"Delegates 'Current Weather'"| WeatherAgent[Weather Agent]
+    RootAgent -->|"Delegates 'Forecast'"| ForecastAgent[Forecast Agent]
     
     WeatherAgent -->|Tool Call| OpenWeatherAPI[OpenWeatherMap API]
     ForecastAgent -->|Tool Call| OpenWeatherAPI
